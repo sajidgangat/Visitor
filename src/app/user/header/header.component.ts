@@ -7,14 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+message = "";
+
   constructor() { }
 
   ngOnInit() {
   }
 
-  onclicked()
-  {
-    alert("clicked");
   }
-
-}

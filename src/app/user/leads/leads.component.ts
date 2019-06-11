@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output,EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-leads',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./leads.component.css']
 })
 export class LeadsComponent implements OnInit {
-
+  @Output() public childdata = new EventEmitter();
   constructor() { }
+
+
 
   ngOnInit() {
   }
+
+
+  send()
+  {
+    alert("called");
+   this.childdata.emit("from child controller");
+    }
 
 }
