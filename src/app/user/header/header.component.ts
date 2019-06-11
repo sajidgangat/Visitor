@@ -12,4 +12,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  onclicked()
+  {
+    alert("clicked");
+  }
+
 }

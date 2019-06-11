@@ -9,6 +9,8 @@ import { AppRouting } from './app.route';
 import { HeaderComponent } from './user/header/header.component';
 import { ContentsComponent } from './user/contents/contents.component';
 import { DashboardComponent } from './user/dashboard/dashboard.component';
+import { LeadsComponent } from './user/leads/leads.component';
+import { TodaysleadsComponent } from './user/todaysleads/todaysleads.component';
 
 
 
@@ -20,7 +22,9 @@ import { DashboardComponent } from './user/dashboard/dashboard.component';
     ForgetpasswordComponent,
     HeaderComponent,
     ContentsComponent,
-    DashboardComponent
+    DashboardComponent,
+    LeadsComponent,
+    TodaysleadsComponent
   ],
   imports: [
     BrowserModule,
