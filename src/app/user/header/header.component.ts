@@ -7,11 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-message = "";
+  message = {};
 
   constructor() { }
 
   ngOnInit() {
+  }
+  getchilddata(event)
+  {
+    this.message = event;
   }
 
   }

@@ -11,6 +11,7 @@ import { ContentsComponent } from './user/contents/contents.component';
 import { DashboardComponent } from './user/dashboard/dashboard.component';
 import { LeadsComponent } from './user/leads/leads.component';
 import { TodaysleadsComponent } from './user/todaysleads/todaysleads.component';
+import { NavigatorComponent } from './navigator/navigator.component';
 
 
 
@@ -24,7 +25,8 @@ import { TodaysleadsComponent } from './user/todaysleads/todaysleads.component';
     ContentsComponent,
     DashboardComponent,
     LeadsComponent,
-    TodaysleadsComponent
+    TodaysleadsComponent,
+    NavigatorComponent
   ],
   imports: [
     BrowserModule,

@@ -7,7 +7,10 @@ import { Component, OnInit, Output,EventEmitter } from '@angular/core';
   styleUrls: ['./leads.component.css']
 })
 export class LeadsComponent implements OnInit {
-  @Output() public childdata = new EventEmitter();
+
+  @Output() childdata = new EventEmitter();
+
+
   constructor() { }
 
 
@@ -18,8 +21,10 @@ export class LeadsComponent implements OnInit {
 
   send()
   {
-    alert("called");
-   this.childdata.emit("from child controller");
+    //alert("called");
+   let a = this.childdata.emit({username:"usename",password:"password"});
+   
+   console.log(a);
     }
 
 }
